@@ -24,3 +24,7 @@ test('should render student name', () => {
     expect(rosterElement).toBeInTheDocument();
     expect(rosterElement).toHaveTextContent(student.firstName);
 })
+
+test('switch access', () => {
+
+})
