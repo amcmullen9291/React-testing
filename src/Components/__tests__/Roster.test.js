@@ -3,7 +3,7 @@ import Roster from '../Roster';
 import renderer from 'react-test-renderer';
 
 afterEach (() => {
-    cleanup();
+    cleanup(); // resets tests
 })
 
 test('test', () => {
