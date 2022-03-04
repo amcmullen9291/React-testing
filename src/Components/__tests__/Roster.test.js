@@ -29,9 +29,13 @@ test('should render student name', () => {
 it('renders correctly', () => {
 
     let student = {id: 7, firstName: "Mark Paul", grade: 10, vehicle: "No"};
+    let student1 = {id: 7, firstName: "Mark January", grade: 12, vehicle: "No"};
+
     const tree = renderer
       .create(<Roster student={student}/>)
       .toJSON();
-    expect(tree).toMatchSnapshot();
-    console.log(tree);
+      expect(tree).toMatchSnapshot();
+    console.log(tree); 
+    // @the tree snapshot only tells if the DOM physically changed
+    //would work if an element changes but not with CSS text decorations like strike-through?
   });
