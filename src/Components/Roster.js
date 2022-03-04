@@ -3,24 +3,30 @@ import React, { useState } from 'react'
 export default function Roster() {
 
     const students = [
-        { id:1, firstName: "Alison Murphy", grade: 9, vehicle: "No"},
-        { id:2, firstName: "Carl Jefferies", grade: 5, vehicle: "No" },
-        { id:3, firstName: "Adam Marcus", grade: 3, vehicle: "No" },
-        { id:4, firstName: "Lenny Tallerman", grade: 9, vehicle: "No" },
-        { id:5, firstName: "Beth Rochester", grade: 12, vehicle: "No" },
+        { id:1, firstName: "Alison Murphy", grade: 9, vehicle: "No Response"},
+        { id:2, firstName: "Carl Jefferies", grade: 5, vehicle: "No Response" },
+        { id:3, firstName: "Adam Marcus", grade: 3, vehicle: "No Response" },
+        { id:4, firstName: "Lenny Tallerman", grade: 9, vehicle: "No Response" },
+        { id:5, firstName: "Beth Rochester", grade: 12, vehicle: "No Response" },
     ];
 
     function switchAccess(e, id){
         e.preventDefault();
         let carInfo = document.getElementById(id);
-       if(e.target.innerHTML == "Yes"){
+       if((e.target.innerHTML == "Yes") || (e.target.innerHTML == "No Response") ){
         e.target.innerHTML = "No";
         carInfo.style.color = "red";
         carInfo.style.textDecoration = "line-through";
+        let student = students.filter(x => x.id == id);
+        student[0].vehicle = "No";
+        return student;
     }else{
         e.target.innerHTML = "Yes"
         carInfo.style.color = "blue";
         carInfo.style.textDecoration = "none";
+        let student = students.filter(x => x.id == id);
+        student[0].vehicle = "Yes";
+        return student;
     }
 }
 

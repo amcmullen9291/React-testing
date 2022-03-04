@@ -15,7 +15,7 @@ test('Should render Roster component', () => {
     const rosterElement = screen.getByTestId('rosterList-1'); // syntax; finds data-testid="rosterList-1", NOT id=""
     expect(rosterElement).toBeInTheDocument();  //is the element on the DOM
     //other options...
-    expect(rosterElement).toHaveTextContent('ster');
+    expect(rosterElement).toHaveTextContent('Roster');
 })
 
 test('should render student name', () => {
@@ -28,8 +28,7 @@ test('should render student name', () => {
 
 it('renders correctly', () => {
 
-    let student = {id: 7, firstName: "Mark Paul", grade: 10, vehicle: "No"};
-    let student1 = {id: 7, firstName: "Mark January", grade: 12, vehicle: "No"};
+    let student = {id: 7, firstName: "Mark Paulbunker", grade: 10, vehicle: "No Response"};
 
     const tree = renderer
       .create(<Roster student={student}/>)

@@ -35,7 +35,7 @@ exports[`renders correctly 1`] = `
               id={1}
               onClick={[Function]}
             >
-              No
+              No Response
             </a>
           </td>
         </tr>
@@ -51,7 +51,7 @@ exports[`renders correctly 1`] = `
               id={2}
               onClick={[Function]}
             >
-              No
+              No Response
             </a>
           </td>
         </tr>
@@ -67,7 +67,7 @@ exports[`renders correctly 1`] = `
               id={3}
               onClick={[Function]}
             >
-              No
+              No Response
             </a>
           </td>
         </tr>
@@ -83,7 +83,7 @@ exports[`renders correctly 1`] = `
               id={4}
               onClick={[Function]}
             >
-              No
+              No Response
             </a>
           </td>
         </tr>
@@ -99,116 +99,7 @@ exports[`renders correctly 1`] = `
               id={5}
               onClick={[Function]}
             >
-              No
-            </a>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div>
-`;
-
-exports[`renders correctly 2`] = `
-<div
-  data-testid="rosterList-1"
->
-  <div>
-    Roster
-  </div>
-  <div>
-    <table>
-      <thead>
-        <tr>
-          <th>
-            name
-          </th>
-          <th>
-            grade
-          </th>
-          <th>
-            vehicle?
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>
-            Alison Murphy
-          </td>
-          <td>
-            9
-          </td>
-          <td>
-            <a
-              id={1}
-              onClick={[Function]}
-            >
-              No
-            </a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Carl Jefferies
-          </td>
-          <td>
-            5
-          </td>
-          <td>
-            <a
-              id={2}
-              onClick={[Function]}
-            >
-              No
-            </a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Adam Marcus
-          </td>
-          <td>
-            3
-          </td>
-          <td>
-            <a
-              id={3}
-              onClick={[Function]}
-            >
-              No
-            </a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Lenny Tallerman
-          </td>
-          <td>
-            9
-          </td>
-          <td>
-            <a
-              id={4}
-              onClick={[Function]}
-            >
-              No
-            </a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Beth Rochester
-          </td>
-          <td>
-            12
-          </td>
-          <td>
-            <a
-              id={5}
-              onClick={[Function]}
-            >
-              No
+              No Response
             </a>
           </td>
         </tr>
